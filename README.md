@@ -3,6 +3,7 @@
 > React frontend created for the Strapi Blog Template
 
 > You can see the app online on [Vercel](https://colibri.vercel.app/)!
+
 > You can see the updated Strapi template on [Github](https://github.com/iurianu/strapi-blog)!
 
 ## Frontend
