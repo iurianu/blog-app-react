@@ -137,8 +137,8 @@ a.link-reset {
         transition: all .5s ease-in-out;
         box-shadow: 0 0px 80px #000; }
         #nav.visible li.circle-one a {
-          line-height: 265vw !important;
-          text-indent: 15vw !important; }
+          line-height: 265vw;
+          text-indent: 15vw; }
       #nav.visible li.circle-two {
         width: 150vw;
         height: 150vw;
@@ -148,8 +148,8 @@ a.link-reset {
         transition: all .6s ease-in-out;
         box-shadow: 0 0px 80px #000; }
         #nav.visible li.circle-two a {
-          line-height: 200vw !important;
-          text-indent: 17vw !important; }
+          line-height: 200vw;
+          text-indent: 17vw; }
       #nav.visible li.circle-three {
         width: 100vw;
         height: 100vw;
@@ -159,8 +159,8 @@ a.link-reset {
         transition: all .7s ease-in-out;
         box-shadow: 0 0px 80px #000; }
         #nav.visible li.circle-three a {
-          line-height: 137vw !important;
-          text-indent: 17vw !important; }
+          line-height: 137vw;
+          text-indent: 17vw; }
       #nav.visible li.circle-five {
         width: 50vw;
         height: 50vw;
@@ -170,10 +170,45 @@ a.link-reset {
         transition: all .8s ease-in-out;
         box-shadow: 0 0px 80px #000; }
         #nav.visible li.circle-five a {
-          line-height: 70vw !important;
-          text-indent: 12vw !important; }
+          line-height: 70vw;
+          text-indent: 12vw; }
   #nav:not(.visible) {
     left: 100vw; }
+
+@media (min-width: 768px) and (max-width: 991px) {
+  #nav.visible li > a {
+    text-indent: 12vw !important;
+    font-size: 1.75rem; } }
+  @media (max-width: 767px) {
+    #nav.visible {
+      height: calc(100vh - 56px);
+      padding: 0; }
+      #nav.visible ul {
+        width: 100vw;
+        height: 100%;
+        padding: 0; }
+        #nav.visible ul li {
+          font-size: 1em; }
+          #nav.visible ul li.shape-circle {
+            position: relative;
+            display: flex;
+            place-items: center;
+            width: 100vw !important;
+            height: calc(100% / 4) !important;
+            border-radius: 0;
+            top: 0 !important;
+            right: 0 !important; }
+            #nav.visible ul li.shape-circle a {
+              position: relative;
+              line-height: 1em;
+              text-indent: 0 !important;
+              border-radius: 0;
+              padding-left: 1ex; }
+            #nav.visible ul li.shape-circle:hover, #nav.visible ul li.shape-circle:focus {
+              background-color: grey; }
+              #nav.visible ul li.shape-circle:hover a, #nav.visible ul li.shape-circle:focus a {
+                background-color: transparent;
+                font-size: 2.2rem; } }
 
 @keyframes top-bar {
   50% {

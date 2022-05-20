@@ -30,7 +30,7 @@ export default function Navigation() {
                             <NavLink itemProp="url" activeclassname="active" to="/category/mysticism">Mysticism</NavLink> 
                         </li>
                         <li itemProp="name" className="shape-circle circle-five">
-                            <NavLink itemProp="url" activeclassname="active" to="/category/developer">Developer</NavLink>                             
+                            <NavLink itemProp="url" activeclassname="active" to="/category/developer">Web</NavLink>                             
                         </li>
                     </ul>
                 </nav>
