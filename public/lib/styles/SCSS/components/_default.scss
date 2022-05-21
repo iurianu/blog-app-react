@@ -1,5 +1,3 @@
-/* Media Queries */
-
 @mixin media-max-420px {
     @media (max-width: 419px)  { @content; }
   }
@@ -55,8 +53,6 @@
       @media (prefers-reduced-motion: reduce) { @content; }                       
   }
   
-  /* Extensions */
-  
   %white-bg       {background-color: #FFF}
   %black-bg       {background-color: #000}
   %center-align   {text-align: center}
@@ -79,7 +75,6 @@
 
   #root {
     @include media-min-768px {
-      //width: 100%;
       max-width: 100vw;
     }
   }

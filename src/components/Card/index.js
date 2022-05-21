@@ -5,7 +5,7 @@ const Card = ({ article }) => {
   const imageUrl = article.attributes.image.data.attributes.url
 
   return (
-    
+    <>
       <article className="card mb-2" itemProp="blogPost" itemScope itemType="http://schema.org/BlogPosting">
         <figure className="card-banner" itemScope itemProp="associatedMedia" itemType="http://schema.org/ImageObject">
           <Link to={`/article/${article.attributes.slug}`} className="link-reset d-block" itemProp="url">
@@ -29,7 +29,7 @@ const Card = ({ article }) => {
           </p>
         </div>
       </article>
-    
+    </>
   )
 }
 

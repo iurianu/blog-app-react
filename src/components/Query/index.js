@@ -8,7 +8,10 @@ const Query = ({ children, query, slug }) => {
 
   if (loading) return <p>Loading...</p>
   if (error) return <p>Error: {JSON.stringify(error)}</p>
-  return children({ data })
+  
+  return( 
+    children({ data })
+  )
 }
 
 export default Query
