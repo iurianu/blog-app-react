@@ -5,7 +5,7 @@ import { HttpLink } from "apollo-link-http"
 const cache = new InMemoryCache()
 
 const link = new HttpLink({
-  uri: `${process.env.STRAPI_URL}/graphql`
+  uri: 'https://iurianu-rocks-cms.herokuapp.com/graphql'
 })
 
 const client = new ApolloClient({
